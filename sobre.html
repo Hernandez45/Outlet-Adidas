@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Sobre Nós</title>
+  <link href="../sobre.css" rel="stylesheet" type="text/css" />
+</head>
+<style>
+    *{
+      box-sizing: border-box;
+  }
+  .simbolo{
+      color:black;
+      margin:50px;
+  }
+  body{
+      background-color: white;
+      color: white;
+      font-family: Robooto, Helvetica, sans-serif;
+      margin: 0;
+      padding: 10px 50px 50px 50px;
+  }
+  h1,h2{
+      margin:0;
+  }
+  header h2{
+      font-size: 5rem;
+      user-select: none;
+  }
+  #logo{
+      display: flex;
+      justify-content: center;
+      padding-right: 10px;
+      pointer-events: none;
+  }
+  .card{
+      background-color: black;
+      padding: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 5px 5px 5px rgb(0,0,0,0.12);
+  }
+  #link{
+      color:white;
+  }
+  #entrega{
+      position:fixed;
+      bottom: 5px;
+      right: 10px;
+      height: 100px;
+      width:300px;
+  }
+  #entrega img{
+      position: absolute;
+      right:10px;
+      width:75px;
+      border-radius: 50%;
+  }
+  #telefone{
+      position: absolute;
+      height:60px;
+      background-color: black;
+      color:white;
+      margin-top:10px;
+      padding: 10px;
+      left: 16px;
+      border-radius:16px;
+      opacity: 0;
+      transition: opacity 0.3s;
+  }
+  #entrega img:hover + #telefone{
+      opacity: 1;
+  }
+  #telefone p{
+      margin:0;
+}
+</style>
+
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <h2 class="simbolo">Sobre Nós</h2>
+        </div>
+    </header>
+    <main>
+        <div class="card">
+            <p>Nosso maior objetivo é poder vender em preço acessível para grande parte das pessoas, assim todo mundo pode usar roupas de ótima qualidade.</p>
+            <p>Todos os nossos produtos vem de lojas oficiais da adidas, além dos produtos da Adidas nós também vendemos produtos de outras marcas como: Nike e Pulma.</p>
+            <p>Mas só vedemos esses produtos na loja fisíca porque eles não são o nosso maior foco. </p>
+            <img id="imagem" src="../imagens/comercial_adidas.jpg" width="400">
+            <div class="card">
+                <p>Esperamos você aqui, entre em contato com a gente pela nossas redes sociais em <a id="link" target="_blank"  href="Contato"> Contatos</a> para saber mais sobre nós ou se quiser fazer uma compra!!</p>
+            </div>   
+        </div>
+    </main>
+    <div id="entrega">
+        <a href="https://api.whatsapp.com?send?phone=111111111&text=Oi, gostaria de comprar um de seus produtos">
+            <img src="../imagens/telefone_2.0.png">
+            <div id="telefone">
+                <p>(11) 11111-1111</p>
+                <p>Telefone da loja</p>
+            </div>
+        </a>
+    </div>
+</body>
+</html>

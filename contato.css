@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+.simbolo{
+    color:black;
+    margin:50px;
+}
+body{
+    background-color: white;
+    color: white;
+    font-family: Robooto, Helvetica, sans-serif;
+    margin: 0;
+    padding: 10px 50px 50px 50px;
+}
+h1,h2{
+    margin:0;
+}
+header h2{
+    font-size: 5rem;
+    user-select: none;
+}
+#logo{
+    display: flex;
+    justify-content: center;
+    padding-right: 10px;
+    pointer-events: none;
+}
+.card{
+    background-color: black;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 5px rgb(0,0,0,0.12);
+}
+.lastcard{
+    margin-bottom: 120px;
+}
+.sobreImg{
+    height: 150px;
+    border-radius: 20px;
+    margin:10px;
+    box-shadow: 0px 0px 5px #888;
+    cursor:pointer;
+    transition: box-shadow 0.5s;
+}
+.sobreImg:hover{
+    box-shadow: 5px 5px 10px #888;
+}
+.sobre_itens{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.sobre_texto a{
+    color:white;
+}
+.social img{
+    margin: 5px;
+    cursor:pointer;
+    transition: opacity 0.3;
+}
+.social img:hover{
+    opacity: 0.5;
+}
+.promocao img{
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.promocao {
+    text-align: center;
+    margin: 5px;
+    cursor:pointer;
+    border-radius:5px;
+    transition: box-shadow 0.5s;
+    font-size: 20px;
+}
+.promocao p{
+    margin: 20px;
+}
+
+#entrega{
+    position:fixed;
+    bottom:5px;
+    right:10px;
+    height: 100px;
+    width:300px;
+}
+#entrega img{
+    position: absolute;
+    right:10px;
+    width:75px;
+    border-radius: 50%;
+}
+#telefone{
+    position: absolute;
+    height:60px;
+    background-color: black;
+    color:white;
+    margin-top:10px;
+    padding: 10px;
+    left: 16px;
+    border-radius:16px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+#entrega img:hover + #telefone{
+    opacity: 1;
+}
+#telefone p{
+    margin:0;
+}
